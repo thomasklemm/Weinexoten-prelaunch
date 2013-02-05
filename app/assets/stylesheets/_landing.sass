@@ -3,6 +3,7 @@
   @include shift(2)
   margin-top: 3rem
   text-align: center
+  margin-bottom: 2rem
 
   // title and subtitle
   .title
@@ -32,3 +33,17 @@
 
 // success note displayed when form submitted
 #success-note
+
+// Responsiveness
+@include media(max-width 769px)
+  .landing
+    @include span-columns(10)
+    @include shift(1)
+    margin-top: 2rem
+
+// Responsiveness
+@include media(max-width 481px)
+  .landing
+    @include span-columns(12)
+    @include shift(0)
+    margin-top: 1rem

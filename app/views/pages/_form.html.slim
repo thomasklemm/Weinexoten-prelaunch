@@ -6,16 +6,15 @@
     = f.text_field :email,
       autofocus: true,
       autocomplete: 'off',
-      placeholder: 'prelauncher@tklemm.eu'
+      placeholder: 'team@weinexoten.com'
 
-    = f.submit 'I want to know more', class: 'submit-button'
+    = f.submit 'Ich will mehr wissen', class: 'submit-button'
 
   / success note
   #success-note style='display: none'
-    h3 You're awesome!
-    p: em You'll be one of the first people to know when we launch. See you then.
-    p: b: em Team Prelauncher
+    h3 Vielen Dank!
+    p: em Sobald das Weinexoten-Team das erste exklusive Paket für Sie geschnürt hat, werden wir Sie kurz informieren.
 
     div
-      = mail_to 'prelauncher@tklemm.eu', 'Get in touch'
+      = mail_to 'team@weinexoten.com', 'Schreiben Sie uns'
 

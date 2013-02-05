@@ -1,8 +1,8 @@
 class Mailer < ActionMailer::Base
   # TODO: SET YOUR MAILER DEFAULTS
-  default from: 'prelauncher@tklemm.eu',
-    to: 'prelauncher@tklemm.eu',
-    subject: 'Prelauncher: New subscriber'
+  default from: 'team@weinexoten.com',
+    to: 'team@weinexoten.com',
+    subject: 'Weinexoten: New subscriber'
 
   def prelaunch_email(subscriber)
     @subscriber = subscriber

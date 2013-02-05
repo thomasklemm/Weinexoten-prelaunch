@@ -28,6 +28,9 @@ gem 'figaro'
 # New Relic (Server Monitoring)
 gem 'newrelic_rpm'
 
+# Redcarpet (Markdown rendering)
+gem 'redcarpet'
+
 # Production Gems
 group :production do
   # Memcached on Heroku
