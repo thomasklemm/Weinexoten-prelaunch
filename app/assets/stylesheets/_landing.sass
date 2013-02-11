@@ -1,6 +1,8 @@
 .landing
   @include span-columns(8)
   @include shift(2)
+  width: 56%
+  margin-left: 22%
   margin-top: 2rem
   text-align: center
   margin-bottom: 2rem
@@ -16,10 +18,12 @@
   // optional short pitch
   .pitch
     margin: 1.2rem 0 1.5rem
+    text-align: justify
 
 
 // email subscription form (container for form and success note)
 #email-signup-form
+  margin-bottom: 1rem
 
 // form field for email
 #subscriber_email
@@ -35,7 +39,7 @@
 #success-note
 
 // Responsiveness
-@include media(max-width 769px)
+@include media(max-width 830px)
   .landing
     @include span-columns(10)
     @include shift(1)
@@ -46,3 +50,5 @@
     @include span-columns(12)
     @include shift(0)
     margin-top: 1rem
+    .pitch
+      text-align: center
