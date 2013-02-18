@@ -5,6 +5,7 @@
   = form_for subscriber, remote: true do |f|
     = f.text_field :email,
       autocomplete: 'off',
+      required: true,
       placeholder: 'team@weinexoten.com'
 
     = f.submit 'Ich will mehr wissen', class: 'submit-button'
@@ -17,3 +18,13 @@
     div
       = mail_to 'team@weinexoten.com', 'Schreiben Sie uns'
 
+.xing
+  | <script type="XING/Share" data-counter="right" data-lang="de" data-url="http://www.weinexoten.com/"></script>
+  | <script>
+  |   ;(function(d, s) {
+  |     var x = d.createElement(s),
+  |       s = d.getElementsByTagName(s)[0];
+  |     x.src ='https://www.xing-share.com/js/external/share.js';
+  |     s.parentNode.insertBefore(x, s);
+  |   })(document, 'script');
+  | </script>

@@ -7,7 +7,7 @@ ruby '1.9.3'
 gem 'puma', '>= 2.0.0.b4'
 
 # Rails
-gem 'rails', '3.2.11'
+gem 'rails', '~> 3.2'
 
 # Mongoid (MongoDB ORM)
 gem 'mongoid'

@@ -1,8 +1,8 @@
 .landing
   @include span-columns(8)
   @include shift(2)
-  width: 56%
-  margin-left: 22%
+  width: 64%
+  margin-left: 18%
   margin-top: 2rem
   text-align: center
   margin-bottom: 2rem
@@ -12,7 +12,7 @@
     font-size: 3.2rem
     font-weight: 700
   .subtitle
-    font-size: 1.5rem
+    font-size: 1.3rem
     line-height: 1.8
 
   // optional short pitch
@@ -29,23 +29,34 @@
 #subscriber_email
   display: block
   margin: 0 auto
+  border-radius: $radius
 
 // submit button
 .submit-button
   @include button
   margin-top: 0.5rem
+  border-radius: $radius
+
+.xing
+  width: 95px
+  margin: 0 auto
+  margin-top: 1rem
 
 // success note displayed when form submitted
 #success-note
 
 // Responsiveness
 @include media(max-width 830px)
+  body
+    font-size: 87.5%
   .landing
     @include span-columns(10)
     @include shift(1)
 
 // Responsiveness
 @include media(max-width 481px)
+  body
+    font-size: 75%
   .landing
     @include span-columns(12)
     @include shift(0)
