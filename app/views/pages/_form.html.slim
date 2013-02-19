@@ -6,9 +6,10 @@
     = f.text_field :email,
       autocomplete: 'off',
       required: true,
-      placeholder: 'team@weinexoten.com'
+      placeholder: 'Ihre Emailadresse'
 
-    = f.submit 'Ich will mehr wissen', class: 'submit-button'
+    = f.submit 'Ich liebe Spitzenweine', class: 'submit-button'
+    div style='margin-top: 0.25rem; color: #7f7f7f' Kein Spam, nur eine kurze Mail wenn es losgeht.
 
   / success note
   #success-note style='display: none'
@@ -18,7 +19,9 @@
     div
       = mail_to 'team@weinexoten.com', 'Schreiben Sie uns'
 
-.xing
+div style='margin-top: 1rem' : b Teilen macht Freude
+
+.xing style='margin-top: 0.5rem'
   | <script type="XING/Share" data-counter="right" data-lang="de" data-url="http://www.weinexoten.com/"></script>
   | <script>
   |   ;(function(d, s) {
@@ -28,3 +31,11 @@
   |     s.parentNode.insertBefore(x, s);
   |   })(document, 'script');
   | </script>
+
+.facebook style='margin-top: 0.5rem'
+  | <div class="fb-like" data-href="http://www.weinexoten.com" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="lucida grande"></div>
+
+div style='margin-top: 0.1rem'
+  b Kennen Sie einen Weinliebhaber?
+  br
+  | Wir freuen uns, wenn Sie uns kurz vorstellen.
