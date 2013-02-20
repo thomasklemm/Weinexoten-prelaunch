@@ -5,6 +5,7 @@
   = form_for subscriber, remote: true do |f|
     = f.text_field :email,
       autocomplete: 'off',
+      autofocus: true,
       required: true,
       placeholder: 'Ihre Emailadresse'
 
